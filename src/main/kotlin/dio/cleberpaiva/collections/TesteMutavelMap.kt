@@ -13,4 +13,11 @@ fun main() {
 
     println(repositorio.findById(joao.nome))
 
+    println("---------- findAll ------------------")
+    repositorio.findAll().forEach { println(it) }
+
+
+    println("---------- Remove ------------------")
+    repositorio.remove(maria.nome)
+    repositorio.findAll().forEach { println(it) }
 }
